@@ -22,9 +22,7 @@ done
 
 echo "Setting wallpaper: $SELECTED_NAME"
 
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$WALL"
-hyprctl hyprpaper wallpaper ",$WALL"
+swww img "$WALL" --transition-type simple --transition-fps 60
 
 echo "Wallpaper set successfully"
 

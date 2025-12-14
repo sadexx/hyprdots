@@ -4,9 +4,7 @@ set -euo pipefail
 WALL=$1
 echo "setting $WALL as wallpaper"
 
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$WALL"
-hyprctl hyprpaper wallpaper ",$WALL"
+swww img "$WALL" --transition-type simple --transition-fps 60
 
 echo "set $WALL as wallpaper successfully"
 

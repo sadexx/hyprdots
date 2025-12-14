@@ -111,7 +111,7 @@
     },
 
     "clock": {
-        "timezone": "Asia/Almaty",
+        "timezone": "Europe/Kyiv",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%H:%M %d %B %Y}",
         "on-click-right": "hyprctl dispatch exec '[float; size 500 270] kitty -e tty-clock -c'",
